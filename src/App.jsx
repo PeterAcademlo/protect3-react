@@ -4,6 +4,7 @@ import useFetch from './hooks/useFecth'
 import getRandomLocation from './utils/getRandomLocation'
 import MainContent from './components/MainContent'
 import 'animate.css';
+import Img2 from './img/img2.jpg'
 
 
 const App = () => {
@@ -23,7 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <img className='app__img' src="./src/img/img2.jpg" alt=""/>
+      <img className='app__img' src={Img2} alt=""/>
         <h1 className="animate__fadeInDown">APP-RICK-MORTY</h1>
         <form className='app__form' onSubmit={handleSubmit}>
           <input className='app__input' ref={inputLocation} type="text" placeholder='Type here your search' required/>
@@ -35,7 +36,7 @@ const App = () => {
         :<MainContent location={location}/>
         }
         <div className='space__img2'>
-          <img className='app__img2' src="./src/img/img2.jpg" alt=""/>
+          <img className='app__img2' src={Img2} alt=""/>
         </div>
     </div>
   )

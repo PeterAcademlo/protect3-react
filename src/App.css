@@ -265,7 +265,7 @@
 
 }
 
-@media (min-width: 339px){
+@media (max-width: 339px){
   .resident-container{
     grid-template-columns: repeat(1, 1fr);
   }
